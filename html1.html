@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>welcome to my website</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(4, 235, 38); 
+}
+button { 
+       background-color: #47ef09; 
+       width: 100%;
+        color: black; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+        } 
+        form { 
+        border: 3px solid #171414; 
+        border-radius: 5px;
+        border-style:outset;
+        border-width: 5px;
+        border-color: gold;
+        padding: 7px;
+    } 
+    h3 {
+        text-align: center;
+        border-top-style:outset ;
+        border-color: #47ef09;
+        text-decoration: dotted;
     }
-  </style>
+    body{
+        background:-o-linear-gradient(skyblue,lightgreen) ;
+
+    }
+    </style>
 </head>
 <body>
-  <h1>hey, this is shashank.</h1>
-  <p>Kill them with your success and burry them with your smile.</p>
+    <form action="table.html" style="text-align: center;">
+        <fieldset style="width: 400px;">
+            <legend style="text-align: center;"><h3>Login Info</h3></legend>
+            <label for="username">Username:</label><br>
+            <input style="text-align: center;" placeholder="Enter Username" type="text" id="username" name="username">
+        <br><br>
+            <label for="password">Password:</label><br>
+            <input style="text-align: center;" placeholder="Enter Password" type="password" id="password" name="password">
+        <br><br>
+            <button type="submit"><b>Login</b></button><br><br>
+            <input type="checkbox" checked="checked"> Remember me  <br>  
+            <a href="form.html" target="_main">Don't have account?</a>
+        </fieldset>
+    </form>
 </body>
 </html>
